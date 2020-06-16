@@ -14,15 +14,15 @@
 
 // Structure Elements
 
+* { margin: 0; padding: 0; }
+
 html {
-  width: 100%;
-  height: 100%;
   color: white;
   background: transparent;
 }
 
 body {
-  padding: 60px;
+  padding: 40px;
 }
 
 header {
@@ -31,8 +31,8 @@ header {
 }
 
 main {
-  height: 740px;
-  margin: 60px 0 60px 0;
+  height: 820px;
+  margin: 40px 0 40px 0;
   @include flexboxCenter();
 }
 
@@ -88,6 +88,39 @@ h3 small {
   font-weight: 400;
 }
 
+.snapchatUpsell {
+  margin: 40px;
+  padding: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #ffffff;
+  box-shadow: 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802),
+    0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725),
+    0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035),
+    0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275),
+    0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198),
+    0px 100px 80px rgba(0, 0, 0, 0.07);
+  border-radius: 8px;
+
+  svg {
+    margin-bottom: 40px;
+  }
+
+  h1 {
+    font-size: 32px;
+    line-height: 36px;
+    color: black;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 36px;
+    color: black;
+  }
+}
+
 #songRequests h1 {
   font-weight: 600;
 }
@@ -104,7 +137,6 @@ h3 small {
   div {
     width: 325px;
     height: 50px;
-    margin-bottom: 60px;
     display: flex;
     align-items: center;
     position: absolute;
@@ -121,7 +153,9 @@ h3 small {
   }
 }
 
-.social { opacity: 0; }
+.social {
+  opacity: 0;
+}
 
 // #socialLinks { animation: flyInLeft 10s both infinite cubic-bezier(0.76, 0, 0.24, 1); }
 
