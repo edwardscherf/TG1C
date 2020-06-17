@@ -19,7 +19,7 @@
     <link rel="icon" type="image/png" href="images/favicon.png" />
   </head>
 
-  <body class="skrimmed">
+  <body class="">
     <header></header>
 
     <main>
@@ -38,6 +38,7 @@
         </svg>
         <h2>Add Matt on Snapchat</h2>
         <h1>MatthewJiles</h1>
+        <div class="progressBar"></div>
       </div>
 
       <div class="snapchatUpsell">
@@ -55,6 +56,7 @@
         </svg>
         <h2>Add Corey on Snapchat</h2>
         <h1>BlankenShizzle</h1>
+        <div class="progressBar"></div>
       </div>
     </main>
 
@@ -62,5 +64,30 @@
 
     <script src="js/anime.min.js"></script>
     <script src="js/socialsCarousel.js"></script>
+    <script>
+      var snapchat = anime.timeline({
+        easing: "spring(1, 80, 10, 0)",
+        duration: 1500,
+        loop: false,
+      });
+
+      snapchat
+        .add({
+          targets: ".snapchatUpsell",
+          translateY: 200,
+          opacity: 0,
+        })
+        .add({
+          targets: ".snapchatUpsell",
+          translateY: 0,
+          opacity: 1,
+        })
+        .add({
+          targets: ".snapchatUpsell",
+          delay: 10000,
+          translateY: 0,
+          opacity: 0,
+        });
+    </script>
   </body>
 </html>
