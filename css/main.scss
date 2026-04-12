@@ -139,7 +139,8 @@ h3 small {
   left: -100px;
 
   div {
-    width: 325px;
+    width: auto;
+    white-space: nowrap;
     height: 50px;
     display: flex;
     align-items: center;
@@ -156,6 +157,7 @@ h3 small {
     margin-left: 15px;
   }
 }
+
 
 .social {
   opacity: 0;

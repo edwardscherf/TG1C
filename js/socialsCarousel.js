@@ -22,7 +22,7 @@ socialsTimeline
       opacity: 1,
       translateX: 100,
     },
-    "-=1500"
+    "-=1500",
   )
   .add({
     targets: "#instagram",
@@ -36,7 +36,7 @@ socialsTimeline
       opacity: 1,
       translateX: 100,
     },
-    "-=1500"
+    "-=1500",
   )
   .add({
     targets: "#snapchatMatt",
@@ -46,42 +46,14 @@ socialsTimeline
   })
   .add(
     {
-      targets: "#snapchatCorey",
+      targets: "#facebookMatt",
       opacity: 1,
       translateX: 100,
     },
-    "-=1500"
+    "-=1500",
   )
   .add({
-    targets: "#snapchatCorey",
-    delay: 15000,
-    translateX: -100,
-    opacity: 0,
-  })
-  .add(
-    {
-      targets: "#twitter",
-      opacity: 1,
-      translateX: 100,
-    },
-    "-=1500"
-  )
-  .add({
-    targets: "#twitter",
-    delay: 15000,
-    translateX: -100,
-    opacity: 0,
-  })
-  .add(
-    {
-      targets: "#youtube",
-      opacity: 1,
-      translateX: 100,
-    },
-    "-=1500"
-  )
-  .add({
-    targets: "#youtube",
+    targets: "#facebookMatt",
     delay: 15000,
     translateX: -100,
     opacity: 0,
